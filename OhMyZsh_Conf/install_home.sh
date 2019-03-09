@@ -6,7 +6,7 @@
 PLUGINS_NAME=("zsh-autosuggestions" "zsh-syntax-highlighting")
 THEME="crunch"
 
-INSTALL_CANTA="false"  # (true / false)  See https://github.com/Vaarai/Canta-theme.git for more info
+INSTALL_CANTA="false"  # (true / false)  See https://github.com/Vaarai/Canta-theme for more info
 
 
 

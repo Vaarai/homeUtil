@@ -1,5 +1,5 @@
 {
-    "background-color": "#000000",
+    "background-color": "#07000A",
     "badge-color": "#AC7EA8",
     "bold-color": "#FFFFFF",
     "comment": "",
@@ -8,7 +8,7 @@
     "foreground-color": "#A1B0B8",
     "highlight-background-color": "#000000",
     "highlight-foreground-color": "#FFFFFF",
-    "name": "CustomTheme",
+    "name": "TilixVaaraiTheme",
     "palette": [
         "#000000",
         "#AA0000",
