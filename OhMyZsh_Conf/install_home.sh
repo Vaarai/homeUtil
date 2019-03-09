@@ -1,9 +1,19 @@
 #!/bin/zsh
 
-SHELL="/usr/bin/zsh"
-USER_HOME="/home/"$USER
+
+### SETTINGS ###
+
 PLUGINS_NAME=("zsh-autosuggestions" "zsh-syntax-highlighting")
 THEME="crunch"
+
+INSTALL_CANTA="false"  # (true / false)  See https://github.com/Vaarai/Canta-theme.git for more info
+
+
+
+### DO NOT EDIT UNDER THIS LINE IF YOU DON'T KNOW WHAT IT MEAN ###
+
+SHELL="/usr/bin/zsh"
+USER_HOME="/home/"$USER
 
 ZSH_install_ohmyzsh () {
 	curl -L -o ohmyzsh_install.sh https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
@@ -39,7 +49,9 @@ THEME_install_mycanta () {
 }
 
 main () {
-	THEME_install_mycanta
+	if $INSTALL_CANTA = "true"; then
+		THEME_install_mycanta
+	fi
 	ZSH_remove_config
 	ZSH_install_ohmyzsh
 	ZSH_setup_zshrc
